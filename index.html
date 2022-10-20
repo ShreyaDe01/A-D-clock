@@ -3,43 +3,34 @@
     <head>
         <title>Analog and Digital Clock</title>
 
-        <link rel="stylesheet" type = "text/css" href = "designClock.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
-
-    <body> 
-        <h1 style="margin-top: 15px; font-size: 50px;">CLOCK</h1>
-        
-        <div class= "container">
-            <div class="row" id="clockline">
-            <div class = "col col-lg-6" style="margin-bottom: 50px;">
-                <div id = "digital_clock">00:00:00</div>
-                <span>
-                    <div class ="row">
-                        <div class="col" id = "day">Saturday</div> 
-                        <div class="col" id= "date">01 January 2000</div>
-                    </div>
-                </span>
-            </div>
-            <div class="col col-lg-6" style="margin-bottom: 50px;">
-               <center> <div id="analog_clock">
+    <body>
+            <h1>Clock</h1>
+        <div class="container">
+            <div class="col">
+                <div id="analog">
                     <div id="hrHand"></div>
                     <div id="minHand"></div>
                     <div id="secHand"></div>
-                </div></center>
+                </div>
             </div>
+            <div class="col">
+                <div id="digital">
+                    <div id="time">00:00:00</div>
+                    <div class="day-date">
+                        <div id="day">
+                            Saturday
+                        </div>
+                        <div id="date">
+                            01 January 2000
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-        <script src="Digi_Clock.js"></script>
-        <script src="Analog_Clock.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
     </body>
-
 </html>
